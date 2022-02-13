@@ -3,42 +3,45 @@
 <!-- Name of company to be decided -->
 <html lang="en">
 
-<!-- Are these breaks needed?-->
-<br>
-<br>
-
-<img src="images/Logo.jpg" alt="Logo"/>
-
     <head>
-        <title>Vino Classico</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible">
+
+        <link href='css/home-page.css' rel='stylesheet'>
+
+        <title>Vino Classico</title>    
     </head>
 
+    <!--
+        <div class="banner">
+        <p>Get in touch to discuss more!</p>
+    </div> -->
+
     <div id="top of page"></div>
+
     <!-- Name of company -->
-    <header> 
-        <h1>Vino Classico</h1>
-    </header>
+    <header id="main-header"> 
+        <img id="header-logo" src="images/Logo.jpg" alt="Logo"/>
+
 
     <!-- Navigation/menu links-->
-    <nav>
+    <nav id="main-navigation">
         <ul>
-            <li><a href="/index.html">Home</a></li>
-            <li><a href="/about_us.html">About Us</a></li>
-            <li><a href="/wine_investment.html">Wine Investment</a></li>
-            <li><a href="/wine_resources.html">Wine Resources</a></li>
-            <ul>
-                <li><a href="/buying_wine.html">Buying Wine</a></li>
-                <li><a href="/selling_wine.html">Selling Wine</a></li>
-                <li><a href="/valuing_wine.html">Valuing Wine</a></li>
-            </ul>
-            <li><a href="/journal.html">Journal</a></li>
-            <li><a href="/contact_us.html">Contact Us</a></li>
+            <li class="nav-content"><a href="/index.html">Home</a></li>
+            <li class="nav-content"><a href="/about_us.html">About Us</a></li>
+            <li class="nav-content"><a href="/wine_investment.html">Wine Investment</a></li>
+            <li class="nav-content"><a href="/wine_resources.html">Wine Resources</a></li>
+            <li class="nav-content"><a href="/journal.html">Journal</a></li>
+            <li class="nav-content"><a href="/contact_us.html">Contact Us</a></li>
         </ul>
     </nav>
+</header>
 
-    <body>
-        <p><h2>Welcome to Vino Classico!</h2></p>
-        <p>This site is still under development, however don't worry, we'll be up and running very soon to provide solutions to any needs you have.
+    <body class="main-page">
+        <img class="welcome-img" src="images/banner.jpg" alt="Red Wine Banner"/>
+        <p><h2 class="welcome-message">Welcome to Vino Classico!</h2></p>
+        <p class="introduction">This site is still under development, however don't worry, we'll be up and running very soon to provide solutions to any needs you have.
             After all, we are keen to share our passion for wine with all our customers.
         </p>
     </body>
@@ -46,5 +49,14 @@
     <!-- Add images of different wines with a price over them.
     Could create different sections with scroll bars through recommended wines-->
 
-    <div><a href="top of page">Top</a></div>
+    <footer id="footer"> <!--Make sure to update the telephone number and email address-->
+        <address>
+        <div class="topofpage"><a href="#top of page">Top</a></div>
+        <p><a href="mailto: madelaine.webster@fleetlogistics.com"><img class="email" src="images/email.png"/></a></p>
+        <a href="telephone_number"><img class="telephone" src="images/phone.png"></a>
+        <a href="https://www.linkedin.com/in/madelainewebster/"><img class="linkedin-logo" src="images/linkedin-logo.png"/><a  target="_blank"></a>
+        <img class="drinkaware" src="images/drinkaware.jpg" alt="Drinkaware logo"/>
+    </address>
+    </footer>
+
 </html>

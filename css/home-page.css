@@ -1,3 +1,14 @@
+/* Body of Page */
+* {
+    box-sizing: border-box;
+    font-family: "Cabin";
+    padding: 0px;
+    margin: 0px;
+
+}
+
+/* Banner */
+
 .banner {
     background-color: darkred;
     height: 25px;
@@ -10,7 +21,6 @@
 .banner p {
     text-align: center;
     color: white;
-    font-family: 'Tahoma';
     font-size: 14px;
     vertical-align: middle;
     display: table-cell;
@@ -19,17 +29,15 @@
 }
 
 #main-header {
-    font-family: 'Tahoma';
     font-weight: 50%;
     font-size: 40px;
-    color: darkred;
+    color: #722F37;
     text-align: center;
     height: 50px;
     background-color:white;
 }
 
 #main-navigation {
-    font-family: 'Tahoma';
     font-size: 20px;
     color: black;
     text-align: center;
@@ -60,6 +68,7 @@ nav li {
     float: left;
 }
 
+/* Nav - within banner */
 .nav-content {
     text-align: center;
     box-sizing: border-box;
@@ -72,22 +81,20 @@ nav a {
     text-decoration: none;
     font-size: 18px;
     font-weight: 50%;
-    color: darkred;
+    color: #722F37;
     box-sizing: border-box;
     text-align: center;
     padding: 10px 10px;
 }
 
 nav a:hover {
-    color: darkred;
+    color: #722F37;
     /*background-color: firebrick;*/
     box-sizing: border-box;
     text-align: center;
     /*border-radius: 50px; */
     border-bottom: solid 4px darkred;
 }
-
-
 
 .subnav {
     float: left;
@@ -105,42 +112,48 @@ nav a:hover {
     margin: 0;
   }
 
+  /* Welcome section */
+
   .welcome-img {
       width: 100%;
       opacity: 90%;
+      margin-left: 10px;
+      margin-right: 10px;
   }
 
   .welcome-message {
       position: absolute;
       top: 20%;
-      left: 35%;
-      color: antiquewhite;
-      font-family: 'Tahoma';
+      color: #722F37;
       font-size: 50px;
-      margin: 5px;
+      text-align: center;
+      background-color: white;
+      width: 100%;
+      padding-bottom: 10px;
   }
 
   .introduction {
-    box-sizing: border-box;
-    width: 50%;
+    display: inline-flex;
     position: absolute;
     top: 27.5%;
-    left: 35.5%;
-    color: antiquewhite;
-    padding-right: 50px;
-    font-family: 'Tahoma';
+    color: #722F37;
+    width: 100%;
+    background-color: white;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-left: 10%;
   }
+
+  /* Footer */
 
   #footer {
       background-color:white;
       height: 50px;
       border-top: solid 3px slategrey;
-      border-bottom: solid 3px slategrey;
 
   }
 
   #footer p {
-      font-family: 'Tahoma';
       display: inline-block;
       text-align: center;
       padding: 5px 20px;
@@ -184,7 +197,6 @@ nav a:hover {
 
   .topofpage {
       display: inline-block;
-      font-family: 'Tahoma';
       font-size: 14px;
       padding-bottom: 10px;
   }
@@ -197,3 +209,26 @@ nav a:hover {
     float: right;
     margin-top: 45px;
   }
+
+  /* Section 1 - About Us Brief Summary */
+  .container {
+      position: relative;
+  }
+  
+  .about-me-intro {
+      position: relative;
+      display: inline-flex;
+      width: 500px;
+      height: 500px;
+      background-image: url("../images/mads_selfie.jpg");
+      background-size: 500px;
+      margin-left: 20px;
+      border: solid 4px lightgrey;
+    }
+
+    .about-me-brief {
+        text-align: center;
+        box-sizing: border-box;
+        align-self: flex-end;        
+        padding: 5px;
+    }

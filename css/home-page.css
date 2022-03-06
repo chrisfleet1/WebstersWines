@@ -4,37 +4,21 @@
     font-family: "Cabin";
     padding: 0px;
     margin: 0px;
-
+    width: 100%;
 }
 
 /* Banner */
-
-.banner {
-    background-color: darkred;
-    height: 25px;
-    border-radius: 50px;
-    width: 99.5%;  
-    display: table;
-    margin-bottom: 10px;
-}
-
-.banner p {
-    text-align: center;
-    color: white;
-    font-size: 14px;
-    vertical-align: middle;
-    display: table-cell;
-    font-weight: 600;
-    font-style: italic;
-}
 
 #main-header {
     font-weight: 50%;
     font-size: 40px;
     color: #722F37;
     text-align: center;
-    height: 50px;
+    height: 10%;
     background-color:white;
+    border-bottom: solid 1px;
+    z-index: 100;
+    position: fixed;
 }
 
 #main-navigation {
@@ -42,30 +26,31 @@
     color: black;
     text-align: center;
     border-bottom: solid 1px transparent;
-    position: relative;
-    top: 30%;
-    left: 15%;
     width: 100%;
+    height: auto;
+    margin-top: 1.2%;
 }
 
 #header-logo {
     float: left;
-    width: 200px;
-    height: 60px;
-    vertical-align: middle;
-    margin-top: 10px;
+    width: 10%;
+    height: auto;
     position: relative;
     z-index: 1;
-    margin-bottom: 20px;
+    
 }
 
 nav li {
-    display: inline-block;
+    display: inline;
     margin-bottom: 10px;
     text-align: center;
     padding-left: 10px;
-    box-sizing: border-box;
-    float: left;
+    box-sizing: border-box;  
+}
+
+#search {
+    float: right;
+    width: 10%;
 }
 
 /* Nav - within banner */
@@ -112,13 +97,14 @@ nav a:hover {
     margin: 0;
   }
 
+  
+
   /* Welcome section */
 
   .welcome-img {
       width: 100%;
-      opacity: 90%;
-      margin-left: 10px;
-      margin-right: 10px;
+      height: auto;
+      opacity: 40%;
   }
 
   .welcome-message {
@@ -129,106 +115,82 @@ nav a:hover {
       text-align: center;
       background-color: white;
       width: 100%;
+      justify-content: center;
+      align-content: center;
       padding-bottom: 10px;
   }
 
   .introduction {
-    display: inline-flex;
+    display: flex;
     position: absolute;
     top: 27.5%;
     color: #722F37;
     width: 100%;
     background-color: white;
-    margin-left: 10px;
-    margin-right: 10px;
-    padding-left: 10%;
+    align-content: center;
+    justify-content: center;
   }
 
   /* Footer */
 
+  /*Need to put space between footer logos, and incorporate the copyright */
+
   #footer {
       background-color:white;
-      height: 50px;
-      border-top: solid 3px slategrey;
-
+      height: 40px;
+      border-top: solid 3px #722F37;
+      width: 100%;
+      text-align: center;
   }
 
-  #footer p {
-      display: inline-block;
-      text-align: center;
-      padding: 5px 20px;
-      margin: 10px 20px;
-      position: relative;
-      left: 40%;
-      font-weight:600 ;
-    }
-
   .drinkaware {
-      display: inline-block;
-      height: 25px;
-      position: relative;
-      left: 78%;
-      padding: 5px auto;
+      height: 40px;
+      width: auto;
+      float: right;
+      padding-top: 5px;
   }
 
   .linkedin-logo {
-    display: inline-block;
-    height: 25px;
-    position: relative;
-    left: 50%;
-    padding: 5px auto;
-}
+    height: 40px;
+    width: auto;
+    padding-top: 5px;
+    }
 
 .telephone {
-    display: inline-block;
-    height: 25px;
-    position: relative;
-    left: 45%;
-    padding: 5px auto;
+    height: 40px;
+    width: auto;
+    padding-top: 5px;
 }
 
 .email {
-    display: inline-block;
-    height: 25px;
-    position: relative;
-    left: 40%;
-    padding: 5px auto;
+    height: 40px;
+    width: auto;
+    padding-top: 5px;
 }
-
-  .topofpage {
-      display: inline-block;
-      font-size: 14px;
-      padding-bottom: 10px;
-  }
-
-  #query {
-      float: right;
-  }
-
-  #search {
-    float: right;
-    margin-top: 45px;
-  }
 
   /* Section 1 - About Us Brief Summary */
   .container {
       position: relative;
+      box-sizing: border-box;
+      border-radius: 50%;
+      background-image: url("../images/mads_selfie.jpg");
+      background-size: 500px;
+      bottom: 75%;
+      width: 500px;
+      height: 500px;
   }
   
   .about-me-intro {
       position: relative;
       display: inline-flex;
-      width: 500px;
-      height: 500px;
-      background-image: url("../images/mads_selfie.jpg");
-      background-size: 500px;
+
       margin-left: 20px;
-      border: solid 4px lightgrey;
+      border: solid 4px #722F37;
     }
 
     .about-me-brief {
         text-align: center;
         box-sizing: border-box;
-        align-self: flex-end;        
+        align-self: center;        
         padding: 5px;
     }

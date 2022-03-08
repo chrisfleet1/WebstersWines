@@ -2,7 +2,7 @@
 /* Body of Page */
 * {
     box-sizing: border-box;
-    font-family: "Sansita Swashed";
+    font-family: "Quicksand";
     padding: 0px;
     margin: 0px;
     width: 100%;
@@ -17,8 +17,8 @@
     font-size: 40px;
     color: #ffffff;
     text-align: center;
-    height: 10%;
-    background-color: #722F37;
+    height: 7%;
+    background-color: #C4B454;
     border-bottom: solid 1px;
     z-index: 100;
     position: fixed;
@@ -31,26 +31,21 @@
     border-bottom: solid 1px transparent;
     width: 100%;
     height: auto;
-    margin-top: 1.2%;
 }
 
 #header-logo {
-    float: left;
     width: auto;
     height: 100%;
     position: relative;
     z-index: 1;
-    background-color: white;
-    
 }
 
 nav li {
     display: inline;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     text-align: center;
-    padding-left: 10px;
     box-sizing: border-box;  
-    color: #ffffff ;
+    color: #C4B454 ;
 }
 
 #search {
@@ -62,28 +57,27 @@ nav li {
 .nav-content {
     text-align: center;
     box-sizing: border-box;
-    padding: 10px 10px;
-    font-weight: 700;
-    margin: 20px;
+    padding: 5px 5px;
+    font-weight: 500;
+    margin: 10px;
 }
 
 nav a {
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: 50%;
-    color: #ffffff;
+    color: #C4B454;
     box-sizing: border-box;
-    text-align: center;
-    padding: 10px 10px;
+    padding: 5px 5px;
 }
 
 nav a:hover {
-    color: #ffffff;
+    color: #C4B454;
     /*background-color: firebrick;*/
     box-sizing: border-box;
     text-align: center;
     /*border-radius: 50px; */
-    border-bottom: solid 4px #ffffff;
+    border-bottom: solid 4px #C4B454;
 }
 
 .subnav {
@@ -123,7 +117,6 @@ nav a:hover {
       justify-content: center;
       align-content: center;
       padding-bottom: 10px;
-      font-family: 'Sansita Swashed';
   }
 
   .introduction {
@@ -141,9 +134,9 @@ nav a:hover {
   /*Need to put space between footer logos, and incorporate the copyright */
 
   #footer {
-      background-color:white;
-      height: 40px;
-      border-top: solid 3px #722F37;
+      background-color:#C4B454;
+      height: 100px;
+      border-top: solid 3px #C4B454;
       width: auto;
       text-align: center;
   }

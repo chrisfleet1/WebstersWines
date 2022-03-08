@@ -1,10 +1,13 @@
+
 /* Body of Page */
 * {
     box-sizing: border-box;
-    font-family: "Cabin";
+    font-family: "Sansita Swashed";
     padding: 0px;
     margin: 0px;
     width: 100%;
+    height: auto;
+    font-size: 16px;
 }
 
 /* Banner */
@@ -12,18 +15,18 @@
 #main-header {
     font-weight: 50%;
     font-size: 40px;
-    color: #722F37;
+    color: #ffffff;
     text-align: center;
     height: 10%;
-    background-color:white;
+    background-color: #722F37;
     border-bottom: solid 1px;
     z-index: 100;
     position: fixed;
 }
 
 #main-navigation {
-    font-size: 20px;
-    color: black;
+    font-size: 1.2rem;
+    color: #ffffff;
     text-align: center;
     border-bottom: solid 1px transparent;
     width: 100%;
@@ -33,10 +36,11 @@
 
 #header-logo {
     float: left;
-    width: 10%;
-    height: auto;
+    width: auto;
+    height: 100%;
     position: relative;
     z-index: 1;
+    background-color: white;
     
 }
 
@@ -46,6 +50,7 @@ nav li {
     text-align: center;
     padding-left: 10px;
     box-sizing: border-box;  
+    color: #ffffff ;
 }
 
 #search {
@@ -64,21 +69,21 @@ nav li {
 
 nav a {
     text-decoration: none;
-    font-size: 18px;
+    font-size: 1.5rem;
     font-weight: 50%;
-    color: #722F37;
+    color: #ffffff;
     box-sizing: border-box;
     text-align: center;
     padding: 10px 10px;
 }
 
 nav a:hover {
-    color: #722F37;
+    color: #ffffff;
     /*background-color: firebrick;*/
     box-sizing: border-box;
     text-align: center;
     /*border-radius: 50px; */
-    border-bottom: solid 4px darkred;
+    border-bottom: solid 4px #ffffff;
 }
 
 .subnav {
@@ -109,15 +114,16 @@ nav a:hover {
 
   .welcome-message {
       position: absolute;
-      top: 20%;
-      color: #722F37;
-      font-size: 50px;
+      top: 7.5%;
+      padding-top: 2%;
+      color: #000000;
+      font-size: 3rem;
       text-align: center;
-      background-color: white;
       width: 100%;
       justify-content: center;
       align-content: center;
       padding-bottom: 10px;
+      font-family: 'Sansita Swashed';
   }
 
   .introduction {
@@ -126,7 +132,6 @@ nav a:hover {
     top: 27.5%;
     color: #722F37;
     width: 100%;
-    background-color: white;
     align-content: center;
     justify-content: center;
   }
@@ -139,7 +144,7 @@ nav a:hover {
       background-color:white;
       height: 40px;
       border-top: solid 3px #722F37;
-      width: 100%;
+      width: auto;
       text-align: center;
   }
 
@@ -156,6 +161,8 @@ nav a:hover {
     padding-top: 5px;
     }
 
+
+
 .telephone {
     height: 40px;
     width: auto;
@@ -169,28 +176,107 @@ nav a:hover {
 }
 
   /* Section 1 - About Us Brief Summary */
-  .container {
-      position: relative;
-      box-sizing: border-box;
-      border-radius: 50%;
-      background-image: url("../images/mads_selfie.jpg");
-      background-size: 500px;
-      bottom: 75%;
-      width: 500px;
-      height: 500px;
-  }
-  
-  .about-me-intro {
-      position: relative;
-      display: inline-flex;
 
-      margin-left: 20px;
-      border: solid 4px #722F37;
-    }
+.container-welcome {
+    display: flex;
+    text-align: center;
+    border-bottom: #722F37 solid 1px;
+    height: 25px;
+    width: 100%;
+    background-color: white;
 
-    .about-me-brief {
+}
+
+.container-section-1 {
+    display: inline-flex;
+    width: 100%;
+    height: 50%;
+    align-items: center;
+    justify-items: center;
+    background-color: #ffffff
+    
+/* background: rgb(114,47,55);
+background: linear-gradient(90deg, rgba(114,47,55,1) 0%, rgba(249,232,192,1) 51%, rgba(114,47,55,1) 100%); */ 
+    
+}
+
+.images {
+    display: inline-flex;
+    flex-direction: column;
+    height: 25%;
+    width: 33%;
+    padding-top: 10%;
+    padding-left: 0.5%;
+}
+
+.images h3 {
+    padding-top: 2%;
+    font-size: 1.5rem;
+}
+
+.images p {
+    padding-top: 1%;
+    padding-bottom: 1%;
+    margin-bottom: 5%;
+}
+
+.images img {
+    border-bottom-left-radius: 25%;
+    border-top-right-radius: 25%;
+}
+
+
+/*Mobile Phone View */
+
+/* Header */
+
+@media screen and (max-width: 480px) {
+
+    * {
         text-align: center;
-        box-sizing: border-box;
-        align-self: center;        
-        padding: 5px;
     }
+
+    #header-logo {
+        width: 25%;
+        height: auto;
+        float: none;
+    }
+
+    .nav-content {
+        font-size: 1em;
+        visibility: hidden;
+    }
+
+    #search {
+        width: 25%;
+        visibility: hidden;
+    }
+
+    #main-header {
+        height: 5%;
+    }
+
+    .container-welcome {
+        width: auto;
+        height: 10%;
+    }
+
+    .welcome-message {
+        font-size: 2em;
+        top: 1.5em;
+        height: 10%;
+    }
+
+    .container-section-1 {
+        align-content: center;
+        align-items: center;
+        text-align: center;
+        padding-left: 25%;
+    }
+
+    .images {
+        display: flex;
+        width: 75%;
+        margin-top: 25%;
+    }
+}
